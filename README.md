@@ -1,4 +1,5 @@
-![todo](https://user-images.githubusercontent.com/61204519/135715645-c1d0c7a3-2dc4-4a62-97e5-82a3e06cc6b0.gif)
+![todo](https://user-images.githubusercontent.com/61204519/135715850-93202aad-40e5-4e33-8f5c-5f1ede527765.gif)
+
 
 
 ### [See Live](https://remindtodo.herokuapp.com/)
