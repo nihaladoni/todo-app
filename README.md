@@ -1,6 +1,7 @@
-# Demo
+![todo](https://user-images.githubusercontent.com/61204519/135715645-c1d0c7a3-2dc4-4a62-97e5-82a3e06cc6b0.gif)
 
-[Live Demo](https://remindtodo.herokuapp.com/)
+
+### [See Live](https://remindtodo.herokuapp.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
