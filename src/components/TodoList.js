@@ -207,6 +207,24 @@ const TodoList = ({ data = [], addDeleteIcon = false }) => {
                             borderRadius="lg"
                           />
                         </VStack>
+
+                        {/* Delete Task Selector */}
+                        <VStack align="start" spacing={1} flex="1" minW="100px">
+                          <Text fontSize="9px" fontWeight="bold" color="gray.500" textTransform="uppercase">
+                            Delete
+                          </Text>
+                          <Button
+                            size="xs"
+                            colorScheme="red"
+                            leftIcon={<FaTrash />}
+                            onClick={() => setTodoToDelete(d)}
+                            borderRadius="lg"
+                            w="100%"
+                            h="24px"
+                          >
+                            Delete
+                          </Button>
+                        </VStack>
                       </HStack>
 
                       <HStack justify="flex-end" spacing={3} mt={1}>
@@ -299,19 +317,17 @@ const TodoList = ({ data = [], addDeleteIcon = false }) => {
                             />
                           </Tooltip>
                         )}
-                        {(addDeleteIcon || d.completed) && (
-                          <Tooltip label="Delete task" hasArrow>
-                            <IconButton
-                              aria-label="Delete todo"
-                              icon={<FaTrash />}
-                              size="sm"
-                              variant="ghost"
-                              colorScheme="red"
-                              onClick={() => setTodoToDelete(d)}
-                              borderRadius="lg"
-                            />
-                          </Tooltip>
-                        )}
+                        <Tooltip label="Delete task" hasArrow>
+                          <IconButton
+                            aria-label="Delete todo"
+                            icon={<FaTrash />}
+                            size="sm"
+                            variant="ghost"
+                            colorScheme="red"
+                            onClick={() => setTodoToDelete(d)}
+                            borderRadius="lg"
+                          />
+                        </Tooltip>
                       </HStack>
                     </Flex>
                   )}

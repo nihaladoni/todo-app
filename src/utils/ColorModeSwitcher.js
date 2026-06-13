@@ -11,13 +11,12 @@ export const ColorModeSwitcher = props => {
     <Tooltip label={`Switch to ${text} mode`} hasArrow>
       <IconButton
         size="md"
-        fontSize="lg"
         aria-label={`Switch to ${text} mode`}
         variant="ghost"
         color="current"
-        marginLeft="2"
         onClick={toggleColorMode}
         icon={<SwitchIcon />}
+        borderRadius="xl"
         {...props}
       />
     </Tooltip>
